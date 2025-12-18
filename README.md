@@ -1,5 +1,7 @@
 # Neural-product-search-engine
 "An end-to-end recommendation system using a Two-Tower Neural Network architecture to provide real-time, semantic product search and discovery."
+
+
 ![Demo GIF](https://github.com/user-attachments/assets/2b09ec79-84a3-4ce8-9017-0e101ada1e5d)
 
 
