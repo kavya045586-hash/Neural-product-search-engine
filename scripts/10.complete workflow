@@ -1,0 +1,49 @@
+# Step 1: Verify your data
+python -c "import pandas as pd; print(pd.read_parquet('electronics_sample_2M (1).parquet').head())"
+
+# Step 2: Preprocessing (10 min)
+python Streamlined-Complete-Pipeline.py
+
+# Step 3: Text Vectorization (30-60 min on CPU, 5-10 min on GPU)
+python Text-Vectorization-Script.py
+
+# Step 4: You already trained the model! Skip this.
+
+# Step 5: Generate embeddings (5 min)
+python Step-3-Generate-Item-Embeddings.py
+
+# Step 6: Test recommendations (instant)
+python Step-4-Recommendation-App.py
+
+# Step 7: Evaluate performance (10 min)
+python Step-5-Evaluation-Metrics.py
+
+# Step 8: Launch web demo (optional)
+python Step-6-Flask-API.py
+# Then open http://localhost:5000 in browser
+```
+
+---
+
+## **📂 Your File Structure Should Look Like:**
+```
+your_project/
+├── electronics_sample_2M (1).parquet  [YOUR INPUT]
+├── Streamlined-Complete-Pipeline.py
+├── Text-Vectorization-Script.py
+├── Step-3-Generate-Item-Embeddings.py
+├── Step-4-Recommendation-App.py
+├── Step-5-Evaluation-Metrics.py
+├── Step-6-Flask-API.py
+└── processed_data/
+    ├── mappings/
+    ├── train_categorical.parquet
+    ├── val_categorical.parquet
+    ├── test_categorical.parquet
+    └── vectorized/
+        ├── train_final_mini.parquet
+        ├── val_final_mini.parquet
+        ├── test_final_mini.parquet
+        ├── two_tower_model_100k.keras
+        ├── item_embeddings_100k.npy
+        └── all_items_processed_100k.parquet

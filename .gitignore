@@ -1,0 +1,9 @@
+venv312/
+__pycache__/
+processed_data/
+*.parquet
+*.csv
+*.keras
+*.npy
+*.h5
+   
