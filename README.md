@@ -1,5 +1,9 @@
 # Neural-product-search-engine
 "An end-to-end recommendation system using a Two-Tower Neural Network architecture to provide real-time, semantic product search and discovery."
+#demo
+https://github.com/user-attachments/assets/2b09ec79-84a3-4ce8-9017-0e101ada1e5d
+
+
 ## 🌟 Key Features
 * **Semantic Retrieval:** Goes beyond keyword matching to understand the "meaning" of queries (e.g., searching for "camera" returns GoPro mounts and lens accessories).
 * **Two-Tower Architecture:** Implements separate User and Item towers for scalable, low-latency inference.
