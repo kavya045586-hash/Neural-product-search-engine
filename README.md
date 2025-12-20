@@ -221,7 +221,6 @@ pip install -r requirements.txt
 ```
 
 ### Step 4: Download Dataset
-Place your `electronics_sample_2M.parquet` file in the project root directory.
 
 ---
 
